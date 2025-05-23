@@ -19,6 +19,84 @@ nav a {
     text-decoration: none;
 }
 
+/* Add these to your existing style.css */
+.intro-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.intro-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff2a6d; /* Charli XCX pink */
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.hell-yes {
+    background-color: #ff2a6d;
+    color: white;
+}
+
+.hell-no {
+    background-color: #333;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+#response-message {
+    font-size: 1.5rem;
+    color: #ff2a6d;
+    margin-top: 20px;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Make sure your existing album styles are still there below */
+
 /* Album grid layout */
 .album-grid {
     display: grid;
